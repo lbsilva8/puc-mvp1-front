@@ -1,0 +1,147 @@
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    box-sizing: border-box;
+    background-color: whitesmoke
+}
+
+header{
+    background-color: rgb(3, 4, 65);
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+/* Parte de cima do projeto */
+#title {
+    color: white;
+    background-color: rgb(3, 4, 65);
+    display: inline-block;
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px 0px;
+    position: sticky;  
+}
+
+.banner {
+    overflow:hidden;
+}
+
+.banner img{
+    width: 10%;
+    padding:5px 0px;
+    margin-bottom: 10px;
+
+}
+
+/* Barra de input de dados */
+.adicionarSerie {
+    background-color: whitesmoke;
+    color: white;
+    padding:  20px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.adicionarSerie:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#novaSerie {
+    margin: 0;
+    border: 1px solid gray;
+    font-size: 15px;
+    width: 10%;
+    padding: 10px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+#Status {
+    margin: 0;
+    border: 1px solid gray;
+    font-size: 15px;
+    width: 10%;
+    padding: 10px;
+}
+
+#novaTemporada {
+    margin: 0;
+    border: 1px solid gray;
+    font-size: 15px;
+    width: 10%;
+    padding: 10px;
+}
+
+#novoAplicativo {
+    margin: 0;
+    border: 1px solid gray;
+    font-size: 15px;
+    width: 15%;
+    padding: 10px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+/* Botão de adicionar nova linha */
+.addBtn {
+    margin-left: 5px;
+    background-color: rgb(131, 125, 125);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.addBtn:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+/* tabela */
+.series {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    position: relative;
+    padding: 10px 5px 10px 5px;
+    font-size: 15px;
+    transition: 0.2s;
+    text-align: center;
+   }
+
+table{
+    background-color: white;
+    color: black;
+    width: 70%;
+}
+
+th{
+    width: 70%;
+    background:rgb(2, 3, 82);
+    color: white;
+}
+
+tr:hover {
+    background: rgb(207, 207, 207);
+}

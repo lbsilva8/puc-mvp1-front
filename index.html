@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-widt, inicial-scale=1.0">
+
+        <title>Wishlist Series</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!--Cabeçalho da página-->
+        <header>
+            <h1 id="title"> Séries para assistir em 2023</h1>
+            <div class="banner">
+                <img src="img/imagem-principal.png" alt="banner principal">
+            </div>
+        </header>
+
+        <!--Parte de onde são imputados os dados pelo usuário-->
+        <section class="adicionarSerie">
+            <input type="text" id="novaSerie" placeholder="Nome da Série:">     
+            <select name="statusSerie" id="status">
+                <option value="" disabled selected>Status:</option>
+                    <option value="Aguardando">Aguardando</option>
+                    <option value="Assistindo">Assistindo</option>
+                    <option value="Finalizado">Finalizado</option>
+                </optgroup>
+            </select>
+            <input type="text" id="novaTemporada" placeholder="Temporada:">
+            <input type="text" id="novoAplicativo" placeholder="Aplicativo de streaming:">
+            <span onclick="adicionarSerie()" class="addBtn">Adicionar</span>
+        </section>
+
+        <!--Montando a tabela com o banco de dados-->
+        <section class="series">
+            <table id="minhaTabela">
+                <tr>
+                    <th><label>Série</label></th>
+                    <th>Status</th>
+                    <th>Temporada</th>
+                    <th>Aplicativo</th>
+                    <th><img src="img/lixeira.png" alt="icone de lixeira" width="20px" height="20px"></th>  
+                </tr>
+                <tr>
+                    <th><input type="text" id="txtColuna1" placeholder="Filtrar"/></th>
+                    <th><input type="text" id="txtColuna2" placeholder="Filtrar"/></th>
+                    <th><input type="hidden"></th>
+                    <th><input type="text" id="txtColuna4" placeholder="Filtrar"/></th>
+                    <th><input type="hidden"></th>
+                </tr>
+            </table>
+        </section>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
+
+
+
